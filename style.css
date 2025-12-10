@@ -1,0 +1,175 @@
+/* Global styles */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f4f6f5;
+  color: #12302a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.custom-nav {
+  background-color: #145ce4;
+}
+
+.custom-nav .navbar-brand {
+  color: #ffffff;
+  font-family: "Goblin One", serif;
+  letter-spacing: 0.5px;
+}
+
+.custom-nav .navbar-brand:hover {
+  color: #e1f3e8;
+}
+
+.custom-nav .nav-link {
+  color: #e4f0ec;
+  font-weight: 500;
+}
+
+.custom-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.airtable-btn {
+  background-color: #17a2b8;
+  border: none;
+  font-weight: 600;
+}
+
+.airtable-btn:hover {
+  background-color: #148497;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  font-family: "Goblin One", serif;
+  color: #0f332c;
+}
+
+.section-intro {
+  color: #4d6a62;
+}
+
+/* Hero section */
+.section-hero {
+  background: radial-gradient(circle at top left, #c6e6d6, #f4f6f5);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-title {
+  font-family: "Goblin One", serif;
+  font-size: 2.5rem;
+  color: #0f332c;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #35554c;
+  margin-top: 0.5rem;
+}
+
+.hero-text {
+  color: #4d6a62;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+  padding-inline: 1.5rem;
+  border-radius: 999px;
+}
+
+.hero-image {
+  max-width: 420px;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Parks section */
+.section-parks {
+  background-color: #ffffff;
+}
+
+.park-card {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.park-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.park-image {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #14553f;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #4a5f58;
+}
+
+.park-tags {
+  margin-top: 0.75rem;
+}
+
+.park-tag {
+  background-color: #e1f3e8;
+  color: #145ce4;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #145ce4;
+  color: #e4f0ec;
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    max-width: 340px;
+  }
+
+  .section {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .park-image {
+    height: 160px;
+  }
+
+  .hero-image {
+    max-width: 280px;
+  }
+}

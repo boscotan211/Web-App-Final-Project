@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SF Parks Explorer</title>
+
+    <!-- Bootstrap import -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goblin+One&family=MonteCarlo&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SF Parks Explorer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#parks" class="nav-link">Parks</a>
+
+            <!-- Airtable button -->
+            <a
+              href="https://airtable.com/app3hIPaotQqHTtzr/shrfCY0eDXmsFyBva"
+              target="_blank"
+              class="btn btn-primary airtable-btn ms-3"
+            >
+              <i class="bi bi-table"></i> View Airtable
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section section-hero" id="hero">
+      <div class="container-fluid">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <h1 class="hero-title">Discover Parks in San Francisco</h1>
+            <p class="hero-subtitle">
+Use this website to discover your next park spot to walk, study, picnic, or just chill with friends.            </p>
+            <p class="hero-text">
+             Powered by AirTable 
+            </p>
+            <a href="#parks" class="btn btn-success hero-btn">
+              <i class="bi bi-tree"></i> Explore Parks
+            </a>
+          </div>
+          <div class="col-md-6 text-center">
+
+            <img
+              src="pictures/sf wide shot.avif"
+              alt="San Francisco park scenery"
+              class="img-fluid hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parks -->
+    <section class="section section-parks" id="parks">
+      <div class="container">
+        <h2 class="section-title mb-3">SF Parks</h2>
+        <p class="section-intro mb-4">
+        </p>
+
+        <!-- Airtable Import -->
+        <div class="row g-4" id="parks-grid"></div>
+        <div class="alert alert-light border mt-4 small">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+      <p class="mb-0">© 2025 SF Parks Explorer. Built by Bosco Tan.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Airtable parks data -->
+    <script src="parks.js"></script>
+  </body>
+</html>
