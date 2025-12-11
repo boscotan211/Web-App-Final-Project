@@ -1,7 +1,7 @@
 const parks = [
   {
     name: "Golden Gate Park",
-    location: "Richmond District & Sunset District",
+    location: "Richmond District / Sunset District",
     description:
       "The largest urban park in San Francisco with lakes, gardens, museums, and long walking and biking paths.",
     size: "1,017 acres",
@@ -171,7 +171,7 @@ const parks = [
   },
   {
     name: "Crane Cove Park",
-    location: "Potrero Point / Dogpatch",
+    location: "Potrero Point",
     description:
       "A newer waterfront park with a small beach, big lawn, and historic shipyard cranes along the Bay.",
     size: "7 acres",
